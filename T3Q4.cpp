@@ -4,7 +4,8 @@ using namespace std;
 void displayVector(float *a_array, int numElem);
 void getInputIntoVector(float *a_array, int numElem);
 
-int main() {
+int main()
+{
     int numElem;
 
     cout << "Enter how many numbers to enter >> ";
@@ -20,16 +21,20 @@ int main() {
     return 0;
 }
 
-void getInputIntoVector(float *a_array, int numElem) {
-    cout << "Enter " << numElem << " floating point numbers:\n";
-    for (int i = 0; i < numElem; i++) {
+void getInputIntoVector(float *a_array, int numElem)
+{
+    for (int i = 0; i < numElem; i++)
+    {
+        cout << "Enter element A[" << i << "]: ";
         cin >> a_array[i];
     }
 }
 
-void displayVector(float *a_array, int numElem) {
+void displayVector(float *a_array, int numElem)
+{
     cout << "Display data in array \n";
-    for (int i = 0; i < numElem; i++) {
+    for (int i = 0; i < numElem; i++)
+    {
         cout << a_array[i] << " ";
     }
     cout << endl;
