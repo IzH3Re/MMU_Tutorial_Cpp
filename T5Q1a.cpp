@@ -36,7 +36,7 @@ class Fraction
         {
             cout << numerator << "/" << denominator << endl;
         }
-
+        
 };
 
 int main()
